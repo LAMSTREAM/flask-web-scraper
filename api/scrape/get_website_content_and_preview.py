@@ -8,7 +8,7 @@ from api.scrape.extract import extract_content
 
 # Set up Selenium with Chrome in headless mode
 options = Options()
-options.headless = True
+options.add_argument('--headless=new')
 options.add_argument("--window-size=1920,1080")  # Set window size for full-page screenshot
 
 
